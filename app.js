@@ -4,7 +4,7 @@ import cron from 'node-cron';
 const token = "6095806646:AAEf6BmgwfM-i20gnkCK5SjgN0MY9ohMGcE"
 const bot = new TelegramBot(token, { polling: true });
 
-const chatId = '450797571'
+const chatId = '996093443'
 
 const sendMessageMonday = () => {
     bot.sendMessage(chatId, `
