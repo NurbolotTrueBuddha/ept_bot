@@ -61,13 +61,12 @@ const sendMessageSunday = () => {
     bot.sendMessage(chatId, `
 Хороших выходных, жанымдар `);
 };
-
-cron.schedule('0 0 * * 2', sendMessageTuesday)
-cron.schedule('0 0 * * 3', sendMessageWednesday);
-cron.schedule('0 0 * * 1', sendMessageMonday);
-cron.schedule('0 0 * * 4', sendMessageThursday);
-cron.schedule('0 0 * * 5', sendMessageFriday);
-cron.schedule('0 0 * * 6', sendMessageSaturday);
+cron.schedule('0 15 * * 0', sendMessageMonday);
+cron.schedule('0 15 * * 1', sendMessageTuesday)
+cron.schedule('0 15 * * 2', sendMessageWednesday);
+cron.schedule('0 15 * * 3', sendMessageThursday);
+cron.schedule('0 15 * * 4', sendMessageFriday);
+cron.schedule('0 15 * * 5', sendMessageSaturday);
 cron.schedule('0 0 * * 0', sendMessageSunday);
 
 bot.on('message', (msg) => {
